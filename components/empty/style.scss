@@ -1,0 +1,37 @@
+@import "../../general.scss";
+@import "../../variables.scss";
+
+.empty {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  &__text {
+    @extend %font-basic;
+    color: #000000;
+  }
+
+  &__btn {
+    padding: 12px 16px;
+
+    color: #ffffff;
+    @extend %font-basic;
+
+    background-color: $primary-bg-color;
+    border-radius: $border-radius;
+    border: none;
+
+    &:hover {
+      background-color: #1068BF;
+    }
+
+    &:active {
+      background-color: #0B5CAD;
+    }
+  }
+}

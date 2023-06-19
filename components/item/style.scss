@@ -1,0 +1,87 @@
+@import "../../general.scss";
+@import "../../variables.scss";
+
+.items {
+  margin: 100px 0;
+}
+
+.item {
+  margin: 0 24px;
+  padding: 0 16px 8px;
+
+  display: flex;
+
+  border-bottom: 1px solid #1C1C1C;
+
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    margin-top: 16px;
+
+    display: flex;
+    gap: 16px;
+  }
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__name,
+  &__num {
+    @extend %font-basic; 
+    color: $primary-color;
+  }
+
+  &__label {
+    padding: 0 8px;
+
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+
+    background-color: #9E6955;
+    border-radius: $border-radius;
+  }
+
+  &__time {
+    color: #8E8E8E;
+    @extend %font-basic;
+  }
+
+  &__update-time {
+    margin-left: auto;
+  }
+
+  &__menu-btn {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+    margin-top: 10px;
+    margin-left: 16px;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: $border-radius;
+    background: none;
+
+    &:hover {
+      background: #ECECEF;      
+      border: 1px solid rgba(18, 19, 22, 0.5);
+    }
+
+    &:active {
+      background: #DCDCDE;    
+      border: 1px solid #1C1C1C;
+    }
+  }
+
+  &:hover &__menu-btn {
+    display: flex;
+  }
+}
