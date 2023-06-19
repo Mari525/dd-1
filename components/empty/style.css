@@ -28,8 +28,13 @@ button {
 }
 
 .empty {
-  width: 100%;
+  padding: 24px;
   height: 100vh;
+}
+.empty__wrapper {
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;

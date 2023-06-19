@@ -39,7 +39,7 @@ button {
   border-radius: 4px;
   color: #ffffff;
 }
-.nav__link:hover, .nav__link--active {
+.nav__link:hover, .nav__link_active {
   background-color: #ffffff;
   color: #1C1C1C;
 }

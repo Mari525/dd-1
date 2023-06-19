@@ -63,7 +63,7 @@ button {
 .item__time {
   color: #8E8E8E;
 }
-.item__update-time {
+.item__right {
   margin-left: auto;
 }
 .item__menu-btn {
@@ -77,6 +77,14 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background: none;
+}
+.item__menu-btn:hover {
+  background: #ECECEF;
+  border: 1px solid rgba(18, 19, 22, 0.5);
+}
+.item__menu-btn:active {
+  background: #DCDCDE;
+  border: 1px solid #1C1C1C;
 }
 .item:hover .item__menu-btn {
   display: flex;
